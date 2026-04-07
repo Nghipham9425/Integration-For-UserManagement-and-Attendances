@@ -1,0 +1,16 @@
+2026-03-31T18:04:16.6125839+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2026-03-31T18:04:16.6362525+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-31T18:04:16.6378144+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-31T18:04:16.6378208+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 18:04:16.575
+2026-03-31T18:04:16.6398149+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 35748
+2026-03-31T18:04:16.6400645+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.17
+2026-03-31T18:04:16.6400798+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.17\System.Private.CoreLib.dll
+2026-03-31T18:04:16.6400921+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-31T18:04:16.6401026+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\bin\Debug\net8.0\OrangeHRM_TestScript.dll
+2026-03-31T18:04:16.6403621+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\bin\Debug\net8.0\Log --results-directory D:\BDCLPM\OrangeHRM_TestScript\TestResults --client-port 49179'
+2026-03-31T18:04:16.6422300+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-31T18:04:16.6716255+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-31T18:04:16.6774707+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\bin\Debug\net8.0\OrangeHRM_TestScript.testconfig.json' not found.
+2026-03-31T18:04:16.6795848+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2026-03-31T18:04:16.8842940+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2026-03-31T18:04:17.0397175+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter INFORMATION Test Parallelization enabled for D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\bin\Debug\net8.0\OrangeHRM_TestScript.dll (Workers: 16, Scope: MethodLevel)
