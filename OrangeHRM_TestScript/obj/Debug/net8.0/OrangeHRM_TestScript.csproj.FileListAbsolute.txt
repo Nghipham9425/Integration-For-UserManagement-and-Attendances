@@ -548,3 +548,4 @@ D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\obj\Debug\net8.0\refint\Oran
 D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\obj\Debug\net8.0\OrangeHRM_TestScript.pdb
 D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\obj\Debug\net8.0\OrangeHRM_TestScript.genruntimeconfig.cache
 D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\obj\Debug\net8.0\ref\OrangeHRM_TestScript.dll
+D:\BDCLPM\OrangeHRM_TestScript\OrangeHRM_TestScript\obj\Debug\net8.0\OrangeHRM_TestScript.sourcelink.json
