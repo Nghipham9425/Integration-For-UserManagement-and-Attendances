@@ -1,2 +1,10 @@
 ﻿.vs/
 **/bin/
+**/obj/
+TestResults/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
