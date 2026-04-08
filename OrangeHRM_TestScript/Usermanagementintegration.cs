@@ -407,11 +407,6 @@ namespace OrangeHRM_TestScript
             Assert.AreEqual("Passed", status, actualMsg);
         }
 
-        // ═══════════════════════════════════════════════════════════════
-        // UM_INT_TC02
-        // Luồng: Admin thêm user (ESS) → Search xác nhận → Edit đổi Role → Admin → Search verify
-        // ═══════════════════════════════════════════════════════════════
-
         [TestMethod]
         public void UM_INT_TC02_AddUser_EditRole_SearchVerify_Flow()
         {
@@ -444,13 +439,13 @@ namespace OrangeHRM_TestScript
                 adminUser = td1.GetValueOrDefault("username", ADMIN_USER);
                 adminPass = td1.GetValueOrDefault("password", ADMIN_PASS);
 
-                newUser   = td2.GetValueOrDefault("Username", "edituser01");
-                newPass   = td2.GetValueOrDefault("Password", "EditUser@01!");
-                newRole   = td2.GetValueOrDefault("Role", "ESS");
-                empHint   = td2.GetValueOrDefault("Employee", "An Văn");
+                newUser = td2.GetValueOrDefault("Username", "edituser01");
+                newPass = td2.GetValueOrDefault("Password", "EditUser@01!");
+                newRole = td2.GetValueOrDefault("Role", "ESS");
+                empHint = td2.GetValueOrDefault("Employee", "An Văn");
                 newStatus = td2.GetValueOrDefault("Status", "Enabled");
 
-                searchUser       = td3.GetValueOrDefault("Username search", newUser);
+                searchUser = td3.GetValueOrDefault("Username search", newUser);
                 newRoleAfterEdit = td6.GetValueOrDefault("User Role filter", "Admin");
             }
 
@@ -510,7 +505,6 @@ namespace OrangeHRM_TestScript
                     ".//button[.//i[contains(@class,'bi-pencil')] or contains(@class,'oxd-icon-button')][2]"));
                 editBtn.Click();
                 wait.Until(d => d.FindElement(By.XPath("//h6[text()='Edit User']")));
-                Assert.IsTrue(true, $"[Step 4] {exp4}"); // Mở Edit thành công
 
                 // ── Step 5: Đổi Role ESS → Admin, nhấn Save ──────────────
                 IWebElement editRoleDrop = wait.Until(d => d.FindElement(By.XPath(
@@ -555,13 +549,15 @@ namespace OrangeHRM_TestScript
                 Assert.IsTrue(inAdminList,
                     $"[Step 7 FAIL] {exp7}\n'{newUser}' không xuất hiện khi filter Role={newRoleAfterEdit}");
 
-                actualMsg = $"Luồng INT_TC02 PASS: Add user ({newRole}) → Search xác nhận → Edit Role→{newRoleAfterEdit} → Search verify → Filter {newRoleAfterEdit}";
+                // ── Tất cả step pass: actual = exp7 ──────────────────────
+                actualMsg = exp7;
                 status = "Passed";
             }
             catch (AssertFailedException afe) { actualMsg = afe.Message; status = "Failed"; }
-            catch (Exception ex)              { actualMsg = ex.Message;  status = "Failed"; }
+            catch (Exception ex) { actualMsg = ex.Message; status = "Failed"; }
 
             WriteIntResult(TC02_ROWS[0], actualMsg, status);
+
             Assert.AreEqual("Passed", status, actualMsg);
         }
     }
